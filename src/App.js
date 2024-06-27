@@ -10,6 +10,7 @@ import CartList from "./CartList";
 
 export default class App extends Component {
   state = { currentCategory: "", products: [], cart: [] };
+  
 
   componentDidMount() {
     this.getProducts();
@@ -83,7 +84,7 @@ export default class App extends Component {
                   element={
                     <CartList
                       cart={this.state.cart}
-                      removeFromCartCart={this.removeFromCart}
+                      removeFromCart={this.removeFromCart}
                     />
                   }
                 />
