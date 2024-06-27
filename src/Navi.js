@@ -7,11 +7,11 @@ import {
   Nav,
   NavItem,
   NavLink,
-  NavbarText
+  NavbarText,
 } from "reactstrap";
 import CartSummary from "./CartSummary";
-import {Link} from "react-router-dom"
- 
+import { Link } from "react-router-dom";
+
 export default class Navi extends React.Component {
   constructor(props) {
     super(props);
@@ -35,14 +35,17 @@ export default class Navi extends React.Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <Link to="/form1">form demo 1</Link>
+                  <NavLink>
+                    <Link to="/form1">form demo 1</Link>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="#">GitHub</NavLink>
                 </NavItem>
-                <CartSummary 
-                removeFromCart={this.props.removeFromCart}
-                cart={this.props.cart}/>
+                <CartSummary
+                  removeFromCart={this.props.removeFromCart}
+                  cart={this.props.cart}
+                />
               </Nav>
             </Collapse>
           </NavbarText>
