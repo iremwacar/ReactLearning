@@ -40,6 +40,11 @@ export default class Navi extends React.Component {
                   </NavLink>
                 </NavItem>
                 <NavItem>
+                  <NavLink>
+                    <Link to="/form2">form demo 1</Link>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
                   <NavLink href="#">GitHub</NavLink>
                 </NavItem>
                 <CartSummary
