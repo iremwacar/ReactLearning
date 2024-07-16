@@ -36,16 +36,13 @@ export default class Navi extends React.Component {
               <Nav className="ml-auto" navbar>
                 <NavItem>
                   <NavLink>
-                    <Link to="/form1">form demo 1</Link>
+                    <Link to="/form1">demo</Link>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink>
-                    <Link to="/form2">form demo 1</Link>
+                    <Link to="/form2">log in</Link>
                   </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#">GitHub</NavLink>
                 </NavItem>
                 <CartSummary
                   removeFromCart={this.props.removeFromCart}

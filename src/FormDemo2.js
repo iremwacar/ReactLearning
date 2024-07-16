@@ -67,7 +67,9 @@ export default class FormDemo2 extends Component {
             </Input>
           </FormGroup>
 
-          <Button type="submit">Save</Button>
+          <Button type="submit">Save
+            
+          </Button>
         </Form>
       </div>
     );
